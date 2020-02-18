@@ -6,23 +6,24 @@
 
 <html>
     <head>
-        <h1> GIS Intern Calendar and Project List </h1>
+        <title>GIS Intern Calendar and Project List</title>
+        <script src="index.js" type="text/javascript"></script>
     </head>
 
-    <body>
+    <body onload="init()">
 
         <div>
         <! Embeds the google calendar at the top of the page >
         <! Must be signed into account that it is shared with to view it >
         <! Mainly for viewing purposes not editing ones, still should edit through calendar app >
-        <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23B39DDB&amp;ctz=America%2FLos_Angeles&amp;src=aHBsMG9pdWxlcGQxbDJybnMzZTNyOXR2bnNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23B39DDB&amp;mode=WEEK&amp;showCalendars=1&amp;showPrint=0&amp;showTabs=0&amp;showNav=0&amp;showTz=0"
+        <iframe id="Calendar" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23B39DDB&amp;ctz=America%2FLos_Angeles&amp;src=aHBsMG9pdWxlcGQxbDJybnMzZTNyOXR2bnNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23B39DDB&amp;mode=WEEK&amp;showCalendars=1&amp;showPrint=0&amp;showTabs=0&amp;showNav=0&amp;showTz=0"
                 style="border:solid 1px #777" width="1890" height="600" frameborder="0" scrolling="no"></iframe>
         </div>
 
         <div>
         <! Embeds the google sheets underneath the google calendar >
         <! Do not need to be signed in to view it >
-        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQoJ72SJSZYFT5lYCmOkrlxrsD40RoNm9TevUnnhyK9Z0HWlRyVINqyWKOLUWFRnfWlbV44RYGZ_jyg/pubhtml?widget=true&amp;headers=false"
+        <iframe id="Sheets" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQoJ72SJSZYFT5lYCmOkrlxrsD40RoNm9TevUnnhyK9Z0HWlRyVINqyWKOLUWFRnfWlbV44RYGZ_jyg/pubhtml?widget=true&amp;headers=false"
                 style="border:solid 1px #777" width="1890" height="600" frameborder="0" scrolling="no"></iframe>
         </div>
 
