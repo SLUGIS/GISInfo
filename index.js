@@ -1,7 +1,7 @@
 
 
 function init(){
-  window.setInterval("reloadIFrame();", 5000);
+  window.setInterval("reloadIFrame();", 60000);
 }
 
 function reloadIFrame() {
