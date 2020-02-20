@@ -7,9 +7,9 @@
 <html>
     <head>
         <title>GIS Intern Calendar and Project List</title>
-
-        <link rel="icon" href="images/Div6Logo_SLOCO_200px.png">
-
+        <link rel="shortcut icon" href="https://dl.dropboxusercontent.com/s/428xe5ptngabz6l/Div6Logo_SLOCO_200px.png?dl=0" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <img src="images/calfireblock_red.jpg" alt="Logo" style="width:200px;height:100px;">
         <meta charset="utf-8">
         <meta name="description" content="GISInfo Intern">
         <meta name="viewport" content="width=device-width">
@@ -21,24 +21,21 @@
     <body onload="init()">
 
       <div id="navigation" style="clear:both; width:100%;">
-      <!-- CODE HERE FOR NAVIGATION -->
+      <!-- Navigation Code -->
         <ul class="nav navbar-nav">
-            <a class="btn btn-default btn-default navbar-btn" href="http://slocountyfire.org/intelreport/"><span class="/glyphicon glyphicon-exclamation-sign"></span>&nbsp;Intel Report</a>
-            <a class="btn btn-default btn-default navbar-btn" href="http://slocountyfire.org/BurnDayStatus/"><span class="glyphicon glyphicon-fire"></span>&nbsp;Burn Day Status</a>
-            <a class="btn btn-default btn-default navbar-btn" href="http://cdb.io/1BytfN9"><span class="glyphicon glyphicon-signal"></span>&nbsp;Dispatch Levels</a>
-            <a class="btn btn-default btn-default navbar-btn" href="http://slocountyfire.org/smokeybear/"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;Fire Danger</a>
+          <a class="btn btn-default btn-default navbar-btn" href="http://slocountyfire.org/intelreport/"><span class="glyphicon glyphicon-exclamation-sign"></span>&nbsp;Intel Report</a>
+          <a class="btn btn-default btn-default navbar-btn" href="http://slocountyfire.org/BurnDayStatus/"><span class="glyphicon glyphicon-fire"></span>&nbsp;Burn Day Status</a>
+          <a class="btn btn-default btn-default navbar-btn" href="http://cdb.io/1BytfN9"><span class="glyphicon glyphicon-signal"></span>&nbsp;Dispatch Levels</a>
+          <a class="btn btn-default btn-default navbar-btn" href="http://slocountyfire.org/caltransCCTV/"><span class="glyphicon glyphicon-camera"></span>&nbsp;CalTrans CCTV</a>
+          <a class="btn btn-default btn-default navbar-btn" href="http://slocountyfire.org/smokeybear/"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;Fire Danger</a>
         </ul>
       </div>
 
       <div id="iframes" style="clear:both; width:100%;">
-        <! Embeds the google calendar at the top of the page >
-        <! Must be signed into account that it is shared with to view it >
-        <! Mainly for viewing purposes not editing ones, still should edit through calendar app >
+        <!-- Calendar and Sheet IFrames Code -->
         <iframe id="Calendar" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23B39DDB&amp;ctz=America%2FLos_Angeles&amp;src=aHBsMG9pdWxlcGQxbDJybnMzZTNyOXR2bnNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23B39DDB&amp;mode=WEEK&amp;showCalendars=1&amp;showPrint=0&amp;showTabs=0&amp;showNav=0&amp;showTz=0"
                 style="border:solid 1px #777" width="1890" height="600" frameborder="0" scrolling="no"></iframe>
 
-        <! Embeds the google sheets underneath the google calendar >
-        <! Do not need to be signed in to view it >
         <iframe id="Sheets" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQoJ72SJSZYFT5lYCmOkrlxrsD40RoNm9TevUnnhyK9Z0HWlRyVINqyWKOLUWFRnfWlbV44RYGZ_jyg/pubhtml?widget=true&amp;headers=false"
                 style="border:solid 1px #777" width="1890" height="600" frameborder="0" scrolling="no"></iframe>
       </div>
