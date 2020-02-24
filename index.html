@@ -59,6 +59,7 @@
             color: #FFFFFF;
             font-size: 14px;
             cursor: pointer;
+
         }
 
         .staticrypt-form .staticrypt-decrypt-button:hover, .staticrypt-form .staticrypt-decrypt-button:active, .staticrypt-form .staticrypt-decrypt-button:focus {
@@ -71,12 +72,12 @@
 
         .staticrypt-body {
             margin-bottom: 1em;
-            background: #76b852; /* fallback for old browsers */
-            background: -webkit-linear-gradient(right, #76b852, #8DC26F);
-            background: -moz-linear-gradient(right, #76b852, #8DC26F);
-            background: -o-linear-gradient(right, #76b852, #8DC26F);
-            background: linear-gradient(to left, #76b852, #8DC26F);
-            font-family: "Arial", sans-serif;
+            background: #292C34; /* fallback for old browsers */
+            background: -webkit-linear-gradient(right, #292C34, #292C34);
+            background: -moz-linear-gradient(right, #292C34, #292C34);
+            background: -o-linear-gradient(right, #292C34, #292C34);
+            background: linear-gradient(to left, #292C34, #292C34);
+            font-family: "Georgia", sans-serif;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
@@ -116,8 +117,10 @@
 <body class="staticrypt-body">
 <div class="staticrypt-page">
     <div class="staticrypt-form">
+        <a href="http://slocountyfire.org"> <img src="images/calfireblock_red.jpg" alt="Logo" style="width:200px;height:100px;"> </a>
+
         <div class="staticrypt-instructions">
-            <p class="staticrypt-title">SLUGIS Information</p>
+            <p class="staticrypt-title" style >SLUGIS Div 6</p>
             <p></p>
         </div>
 
@@ -127,18 +130,15 @@
             <input id="staticrypt-password"
                    type="password"
                    name="password"
-                   placeholder="passphrase"
+                   placeholder="password"
                    autofocus/>
 
-            <input type="submit" class="staticrypt-decrypt-button" value="DECRYPT"/>
+            <input type="submit" class="staticrypt-decrypt-button" value="ENTER"/>
         </form>
+
     </div>
 
 </div>
-<footer class="staticrypt-footer">
-    <p class="pull-right">Created with <a href="https://robinmoisson.github.io/staticrypt">StatiCrypt</a></p>
-</footer>
-
 
 <script>/**
  * Crypto JS 3.1.9-1
