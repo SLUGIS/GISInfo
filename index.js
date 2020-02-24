@@ -1,7 +1,7 @@
 
 
 function init(){
-  window.setInterval("reloadIFrame();", 300000); // interval at 300000 mS ( 5 s)
+  window.setInterval("reloadIFrame();", 300000); // interval at 300000 mS ( 5 m)
 }
 
 // grabs the iframes for the google sheets and the calendars
