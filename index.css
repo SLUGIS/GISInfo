@@ -448,6 +448,11 @@ fieldset[disabled] .btn-link:focus {
   content: "\e101";
 }
 
+.glyphicon-random:before {
+  content: "\e122";
+}
+
+
 .navbar {
   position: relative;
   min-height: 50px;
